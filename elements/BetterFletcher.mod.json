@@ -7,10 +7,10 @@
       "value": "Blocks.DEEPSLATE_EMERALD_ORE"
     },
     "actionSound": {
-      "value": "entity.warden.heartbeat"
+      "value": "entity.villager.work_fletcher"
     },
     "hat": "None",
-    "professionTextureFile": "jujutsu_kaisen_megumi_fushiguro.png",
-    "zombifiedProfessionTextureFile": "jujutsu_kaisen_megumi_fushiguro.png"
+    "professionTextureFile": "123.png",
+    "zombifiedProfessionTextureFile": "123.png"
   }
 }

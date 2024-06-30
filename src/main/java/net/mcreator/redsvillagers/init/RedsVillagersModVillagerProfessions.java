@@ -34,7 +34,8 @@ import com.google.common.collect.ImmutableSet;
 public class RedsVillagersModVillagerProfessions {
 	private static final Map<String, ProfessionPoiType> POI_TYPES = new HashMap<>();
 	public static final DeferredRegister<VillagerProfession> PROFESSIONS = DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, RedsVillagersMod.MODID);
-	public static final RegistryObject<VillagerProfession> BETTER_FLETCHER = registerProfession("better_fletcher", () -> Blocks.DEEPSLATE_EMERALD_ORE, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.warden.heartbeat")));
+	public static final RegistryObject<VillagerProfession> BETTER_FLETCHER = registerProfession("better_fletcher", () -> Blocks.DEEPSLATE_EMERALD_ORE,
+			() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.work_fletcher")));
 
 	private static RegistryObject<VillagerProfession> registerProfession(String name, Supplier<Block> block, Supplier<SoundEvent> soundEvent) {
 		POI_TYPES.put(name, new ProfessionPoiType(block, null));
