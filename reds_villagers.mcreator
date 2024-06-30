@@ -3,6 +3,7 @@
     {
       "name": "BetterFletcher",
       "type": "villagerprofession",
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "better_fletcher",
@@ -19,39 +20,6 @@
       "registry_name": "better_fletcher_trades",
       "metadata": {
         "files": []
-      }
-    },
-    {
-      "name": "Cock",
-      "type": "item",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cream",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/reds_villagers/models/item/cream.json",
-          "src/main/java/net/mcreator/redsvillagers/item/CockItem.java"
-        ]
-      }
-    },
-    {
-      "name": "CockPlayerFinishesUsingItem",
-      "type": "procedure",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cock_player_finishes_using_item",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/redsvillagers/procedures/CockPlayerFinishesUsingItemProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
       }
     },
     {
@@ -84,6 +52,39 @@
           "src/main/java/net/mcreator/redsvillagers/client/gui/ArrowSmithGUIScreen.java"
         ]
       }
+    },
+    {
+      "name": "HastePlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "haste_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/redsvillagers/procedures/HastePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Haste",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "haste",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/redsvillagers/item/HasteItem.java",
+          "src/main/resources/assets/reds_villagers/models/item/haste.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -95,9 +96,12 @@
   },
   "language_map": {
     "en_us": {
+      "item.reds_villagers.haste": "Haste",
+      "gui.reds_villagers.arrow_smith_gui.label_empty": "+",
       "item.reds_villagers.cream": "Whipped Cream",
       "entity.minecraft.villager.reds_villagers.better_fletcher": "Better Fletcher",
-      "block.reds_villagers.arrow_smiths_workbench": "Arrow Smiths Workbench"
+      "block.reds_villagers.arrow_smiths_workbench": "Arrow Smiths Workbench",
+      "gui.reds_villagers.arrow_smith_gui.label_arrowsmithing": "Arrowsmithing"
     }
   },
   "foldersRoot": {

@@ -11,16 +11,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.LivingEntity;
 
-import net.mcreator.redsvillagers.procedures.CockPlayerFinishesUsingItemProcedure;
+import net.mcreator.redsvillagers.procedures.HastePlayerFinishesUsingItemProcedure;
 
-public class CockItem extends Item {
-	public CockItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationMod(1f).alwaysEat().build()));
-	}
-
-	@Override
-	public int getUseDuration(ItemStack itemstack) {
-		return 40;
+public class HasteItem extends Item {
+	public HasteItem() {
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f).alwaysEat().build()));
 	}
 
 	@Override
@@ -35,7 +30,7 @@ public class CockItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		CockPlayerFinishesUsingItemProcedure.execute(entity);
+		HastePlayerFinishesUsingItemProcedure.execute(entity);
 		return retval;
 	}
 }
