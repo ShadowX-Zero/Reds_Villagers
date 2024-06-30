@@ -32,7 +32,7 @@ public class RedsVillagersModTrades {
 					new ItemStack(Items.EMERALD), 10, 5, 0.05f));
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Items.EMERALD),
 
-					new ItemStack(RedsVillagersModItems.CREAM.get()), 10, 5, 0.05f));
+					new ItemStack(RedsVillagersModItems.DELETED_MOD_ELEMENT.get()), 10, 5, 0.05f));
 		}
 	}
 }
