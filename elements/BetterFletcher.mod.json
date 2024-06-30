@@ -1,0 +1,16 @@
+{
+  "_fv": 60,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Better Fletcher",
+    "pointOfInterest": {
+      "value": "Blocks.DEEPSLATE_EMERALD_ORE"
+    },
+    "actionSound": {
+      "value": "entity.warden.heartbeat"
+    },
+    "hat": "None",
+    "professionTextureFile": "jujutsu_kaisen_megumi_fushiguro.png",
+    "zombifiedProfessionTextureFile": "jujutsu_kaisen_megumi_fushiguro.png"
+  }
+}
