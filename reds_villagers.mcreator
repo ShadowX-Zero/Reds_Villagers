@@ -3,7 +3,6 @@
     {
       "name": "BetterFletcher",
       "type": "villagerprofession",
-      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "better_fletcher",
@@ -69,6 +68,20 @@
           "src/main/java/net/mcreator/redsvillagers/block/ArrowSmithsWorkbenchBlock.java",
           "src/main/resources/assets/reds_villagers/blockstates/arrow_smiths_workbench.json",
           "src/main/resources/assets/reds_villagers/models/block/arrow_smiths_workbench.json"
+        ]
+      }
+    },
+    {
+      "name": "ArrowSmithGUI",
+      "type": "gui",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_smith_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/redsvillagers/world/inventory/ArrowSmithGUIMenu.java",
+          "src/main/java/net/mcreator/redsvillagers/client/gui/ArrowSmithGUIScreen.java"
         ]
       }
     }
