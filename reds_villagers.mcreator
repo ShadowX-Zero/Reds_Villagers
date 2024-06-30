@@ -3,7 +3,6 @@
     {
       "name": "BetterFletcher",
       "type": "villagerprofession",
-      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "better_fletcher",
@@ -85,6 +84,41 @@
           "src/main/resources/assets/reds_villagers/models/item/haste.json"
         ]
       }
+    },
+    {
+      "name": "OpenArrowsmithGUI",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_arrowsmith_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/redsvillagers/procedures/OpenArrowsmithGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -96,7 +130,6 @@
   },
   "language_map": {
     "en_us": {
-      "item.reds_villagers.haste": "Haste",
       "gui.reds_villagers.arrow_smith_gui.label_empty": "+",
       "item.reds_villagers.cream": "Whipped Cream",
       "entity.minecraft.villager.reds_villagers.better_fletcher": "Better Fletcher",
