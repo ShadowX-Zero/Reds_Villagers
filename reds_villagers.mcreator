@@ -3,11 +3,56 @@
     {
       "name": "BetterFletcher",
       "type": "villagerprofession",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "better_fletcher",
       "metadata": {
         "files": []
+      }
+    },
+    {
+      "name": "BetterFletcherTrades",
+      "type": "villagertrade",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "better_fletcher_trades",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CockPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cock_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/redsvillagers/procedures/CockPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cock",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cream",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/reds_villagers/models/item/cream.json",
+          "src/main/java/net/mcreator/redsvillagers/item/CockItem.java"
+        ]
       }
     }
   ],
@@ -16,6 +61,7 @@
   "tag_elements": {},
   "language_map": {
     "en_us": {
+      "item.reds_villagers.cream": "Whipped Cream",
       "entity.minecraft.villager.reds_villagers.better_fletcher": "Better Fletcher"
     }
   },
