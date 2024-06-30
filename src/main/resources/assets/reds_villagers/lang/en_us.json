@@ -1,6 +1,3 @@
 {
-  "gui.reds_villagers.arrow_smith_gui.label_empty": "+",
-  "entity.minecraft.villager.reds_villagers.better_fletcher": "Better Fletcher",
-  "block.reds_villagers.arrow_smiths_workbench": "Arrow Smiths Workbench",
-  "gui.reds_villagers.arrow_smith_gui.label_arrowsmithing": "Arrowsmithing"
+  "entity.minecraft.villager.reds_villagers.better_fletcher": "Better Fletcher"
 }
