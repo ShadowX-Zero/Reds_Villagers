@@ -3,6 +3,7 @@
     {
       "name": "BetterFletcher",
       "type": "villagerprofession",
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "better_fletcher",
@@ -81,7 +82,9 @@
   },
   "language_map": {
     "en_us": {
-      "entity.minecraft.villager.reds_villagers.better_fletcher": "Better Fletcher"
+      "item.reds_villagers.cream": "Whipped Cream",
+      "entity.minecraft.villager.reds_villagers.better_fletcher": "Better Fletcher",
+      "block.reds_villagers.arrow_smiths_workbench": "Arrow Smiths Workbench"
     }
   },
   "foldersRoot": {
