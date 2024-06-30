@@ -4,7 +4,7 @@
   "definition": {
     "displayName": "Better Fletcher",
     "pointOfInterest": {
-      "value": "Blocks.DEEPSLATE_EMERALD_ORE"
+      "value": "CUSTOM:ArrowSmithsWorkbench"
     },
     "actionSound": {
       "value": "entity.villager.work_fletcher"

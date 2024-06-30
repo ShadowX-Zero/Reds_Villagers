@@ -20,6 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.redsvillagers.init.RedsVillagersModVillagerProfessions;
 import net.mcreator.redsvillagers.init.RedsVillagersModTabs;
 import net.mcreator.redsvillagers.init.RedsVillagersModItems;
+import net.mcreator.redsvillagers.init.RedsVillagersModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -40,6 +41,8 @@ public class RedsVillagersMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		RedsVillagersModBlocks.REGISTRY.register(bus);
 
 		RedsVillagersModItems.REGISTRY.register(bus);
 

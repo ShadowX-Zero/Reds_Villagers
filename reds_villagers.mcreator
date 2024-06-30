@@ -3,7 +3,6 @@
     {
       "name": "BetterFletcher",
       "type": "villagerprofession",
-      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "better_fletcher",
@@ -20,6 +19,20 @@
       "registry_name": "better_fletcher_trades",
       "metadata": {
         "files": []
+      }
+    },
+    {
+      "name": "Cock",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cream",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/reds_villagers/models/item/cream.json",
+          "src/main/java/net/mcreator/redsvillagers/item/CockItem.java"
+        ]
       }
     },
     {
@@ -42,26 +55,32 @@
       }
     },
     {
-      "name": "Cock",
-      "type": "item",
-      "sortid": 4,
+      "name": "ArrowSmithsWorkbench",
+      "type": "block",
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cream",
+      "registry_name": "arrow_smiths_workbench",
       "metadata": {
         "files": [
-          "src/main/resources/assets/reds_villagers/models/item/cream.json",
-          "src/main/java/net/mcreator/redsvillagers/item/CockItem.java"
+          "src/main/resources/data/reds_villagers/loot_tables/blocks/arrow_smiths_workbench.json",
+          "src/main/resources/assets/reds_villagers/models/item/arrow_smiths_workbench.json",
+          "src/main/java/net/mcreator/redsvillagers/block/ArrowSmithsWorkbenchBlock.java",
+          "src/main/resources/assets/reds_villagers/blockstates/arrow_smiths_workbench.json",
+          "src/main/resources/assets/reds_villagers/models/block/arrow_smiths_workbench.json"
         ]
       }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:ArrowSmithsWorkbench"
+    ]
+  },
   "language_map": {
     "en_us": {
-      "item.reds_villagers.cream": "Whipped Cream",
       "entity.minecraft.villager.reds_villagers.better_fletcher": "Better Fletcher"
     }
   },

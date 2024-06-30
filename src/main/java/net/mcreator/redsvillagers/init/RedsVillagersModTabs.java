@@ -21,7 +21,9 @@ public class RedsVillagersModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+			tabData.accept(RedsVillagersModBlocks.ARROW_SMITHS_WORKBENCH.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(RedsVillagersModItems.CREAM.get());
 		}
 	}

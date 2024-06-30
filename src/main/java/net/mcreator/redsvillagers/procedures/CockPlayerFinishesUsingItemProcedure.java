@@ -1,9 +1,6 @@
 package net.mcreator.redsvillagers.procedures;
 
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
+import net.minecraftforge.eventbus.api.Event;
 
 public class CockPlayerFinishesUsingItemProcedure {
 	public static void execute(Entity entity) {
