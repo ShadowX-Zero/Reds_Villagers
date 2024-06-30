@@ -19,6 +19,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.redsvillagers.init.RedsVillagersModVillagerProfessions;
 import net.mcreator.redsvillagers.init.RedsVillagersModTabs;
+import net.mcreator.redsvillagers.init.RedsVillagersModMenus;
 import net.mcreator.redsvillagers.init.RedsVillagersModItems;
 import net.mcreator.redsvillagers.init.RedsVillagersModBlocks;
 
@@ -49,7 +50,7 @@ public class RedsVillagersMod {
 		RedsVillagersModTabs.REGISTRY.register(bus);
 
 		RedsVillagersModVillagerProfessions.PROFESSIONS.register(bus);
-
+		RedsVillagersModMenus.REGISTRY.register(bus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

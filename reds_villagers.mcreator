@@ -27,6 +27,20 @@
           "src/main/resources/assets/reds_villagers/models/block/arrow_smiths_workbench.json"
         ]
       }
+    },
+    {
+      "name": "ArrowSmithGUI",
+      "type": "gui",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_smith_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/redsvillagers/world/inventory/ArrowSmithGUIMenu.java",
+          "src/main/java/net/mcreator/redsvillagers/client/gui/ArrowSmithGUIScreen.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -38,8 +52,10 @@
   },
   "language_map": {
     "en_us": {
+      "gui.reds_villagers.arrow_smith_gui.label_empty": "+",
       "entity.minecraft.villager.reds_villagers.better_fletcher": "Better Fletcher",
-      "block.reds_villagers.arrow_smiths_workbench": "Arrow Smiths Workbench"
+      "block.reds_villagers.arrow_smiths_workbench": "Arrow Smiths Workbench",
+      "gui.reds_villagers.arrow_smith_gui.label_arrowsmithing": "Arrowsmithing"
     }
   },
   "foldersRoot": {
