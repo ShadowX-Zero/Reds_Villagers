@@ -84,13 +84,13 @@
             "price1": {
               "value": "Items.EMERALD"
             },
-            "countPrice1": 1,
+            "countPrice1": 4,
             "price2": {
               "value": ""
             },
             "countPrice2": 1,
             "offer": {
-              "value": "CUSTOM:Cock"
+              "value": "CUSTOM:Haste"
             },
             "countOffer": 1,
             "level": 5,

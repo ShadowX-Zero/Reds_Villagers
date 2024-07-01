@@ -87,6 +87,39 @@
           }
         ]
       }
+    },
+    {
+      "name": "HastePlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "haste_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/redsvillagers/procedures/HastePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Haste",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "haste",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/redsvillagers/item/HasteItem.java",
+          "src/main/resources/assets/reds_villagers/models/item/haste.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
