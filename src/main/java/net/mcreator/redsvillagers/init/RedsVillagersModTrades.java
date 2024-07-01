@@ -20,7 +20,7 @@ public class RedsVillagersModTrades {
 		if (event.getType() == RedsVillagersModVillagerProfessions.BETTER_FLETCHER.get()) {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.STICK, 16),
 
-					new ItemStack(Items.EMERALD, 2), 200, 5, 0.05f));
+					new ItemStack(Items.EMERALD), 200, 5, 0.05f));
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.BOW),
 
 					new ItemStack(Blocks.EMERALD_BLOCK), 5, 5, 0.05f));

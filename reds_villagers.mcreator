@@ -3,6 +3,7 @@
     {
       "name": "BetterFletcher",
       "type": "villagerprofession",
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "better_fletcher",
