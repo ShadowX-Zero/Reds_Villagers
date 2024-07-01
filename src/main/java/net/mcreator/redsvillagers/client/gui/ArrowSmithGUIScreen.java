@@ -1,9 +1,21 @@
 package net.mcreator.redsvillagers.client.gui;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.GuiGraphics;
+
+import net.mcreator.redsvillagers.world.inventory.ArrowSmithGUIMenu;
+
+import java.util.HashMap;
+
+import com.mojang.blaze3d.systems.RenderSystem;
+
 public class ArrowSmithGUIScreen extends AbstractContainerScreen<ArrowSmithGUIMenu> {
-
 	private final static HashMap<String, Object> guistate = ArrowSmithGUIMenu.guistate;
-
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
@@ -24,11 +36,8 @@ public class ArrowSmithGUIScreen extends AbstractContainerScreen<ArrowSmithGUIMe
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
-
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-
 	}
 
 	@Override
@@ -36,7 +45,6 @@ public class ArrowSmithGUIScreen extends AbstractContainerScreen<ArrowSmithGUIMe
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		guiGraphics.blit(new ResourceLocation("reds_villagers:textures/screens/arrowscreensymbol.png"), this.leftPos + 80, this.topPos + 41, 0, 0, 16, 16, 16, 16);
@@ -50,7 +58,6 @@ public class ArrowSmithGUIScreen extends AbstractContainerScreen<ArrowSmithGUIMe
 			this.minecraft.player.closeContainer();
 			return true;
 		}
-
 		return super.keyPressed(key, b, c);
 	}
 
@@ -68,7 +75,5 @@ public class ArrowSmithGUIScreen extends AbstractContainerScreen<ArrowSmithGUIMe
 	@Override
 	public void init() {
 		super.init();
-
 	}
-
 }
